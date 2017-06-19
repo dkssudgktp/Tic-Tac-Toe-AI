@@ -13,5 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Tic-Tac-Toe Game">
+      <UniqueIdentifier>{2b7b94eb-6207-4854-8bd3-2aa3815e4d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\MiniMax">
+      <UniqueIdentifier>{a829a200-e12a-4df3-a1e4-4304cf6f1115}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Tic-Tac-Toe.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tic-Tac-Toe.cpp">
+      <Filter>소스 파일\Tic-Tac-Toe Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\Tic-Tac-Toe Game</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
