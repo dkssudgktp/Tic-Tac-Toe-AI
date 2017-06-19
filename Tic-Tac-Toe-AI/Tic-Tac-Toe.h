@@ -7,7 +7,7 @@ class Tic_Tac_Toe{
 private:
 	string board[3][3];
 	
-	string whoTurn = "O"; // first is true
+	string whoTurn = "O"; // first is O's turn
 
 public:
 	Tic_Tac_Toe();
@@ -17,8 +17,11 @@ public:
 	void addMove(int);
 	void clearBoard();
 	void printBoard();
+
 	void aiGaLogic();
-	void gameLogic();
+	int gameLogic();
 
 	int getInput();
+	
+	~Tic_Tac_Toe();
 };

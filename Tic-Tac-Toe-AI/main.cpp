@@ -3,6 +3,6 @@
 
 int main(void) {
 	Tic_Tac_Toe *Tic = new Tic_Tac_Toe();
-	Tic->printBoard();
+	Tic->gameLogic();
 	return 0;
 }
