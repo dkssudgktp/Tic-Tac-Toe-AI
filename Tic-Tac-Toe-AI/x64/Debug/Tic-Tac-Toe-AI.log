@@ -1,10 +1,11 @@
 ﻿  Tic-Tac-Toe.cpp
+  코드를 생성하고 있습니다...
 c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\minimax.h(13): warning C4700: 초기화되지 않은 'i' 지역 변수를 사용했습니다.
-c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\minimax.h(14): warning C4700: 초기화되지 않은 'j' 지역 변수를 사용했습니다.
-c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(88): warning C4715: 'Tic_Tac_Toe::switchuser': 모든 제어 경로에서 값을 반환하지는 않습니다.
-c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(93): warning C4700: 초기화되지 않은 'i' 지역 변수를 사용했습니다.
-c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(94): warning C4700: 초기화되지 않은 'j' 지역 변수를 사용했습니다.
-c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(134): warning C4715: 'Tic_Tac_Toe::gameLogic': 모든 제어 경로에서 값을 반환하지는 않습니다.
 c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\minimax.h(8): warning C4715: 'switchuser': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(91): warning C4700: 초기화되지 않은 'i' 지역 변수를 사용했습니다.
+c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(136): warning C4715: 'Tic_Tac_Toe::gameLogic': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\hid\desktop\project\tic-tac-toe-ai\tic-tac-toe-ai\tic-tac-toe.cpp(86): warning C4715: 'Tic_Tac_Toe::switchuser': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  건너뛰고 있습니다... (관련된 변경 내용 없음)
+  main.cpp
   Tic-Tac-Toe-AI.vcxproj -> C:\Users\HID\Desktop\project\Tic-Tac-Toe-AI\x64\Debug\Tic-Tac-Toe-AI.exe
   Tic-Tac-Toe-AI.vcxproj -> C:\Users\HID\Desktop\project\Tic-Tac-Toe-AI\x64\Debug\Tic-Tac-Toe-AI.pdb (Partial PDB)

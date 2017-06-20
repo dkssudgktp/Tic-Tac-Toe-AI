@@ -5,7 +5,7 @@ using namespace std;
 
 class Tic_Tac_Toe{
 private:
-	string board[3][3];
+	string board[9];
 	
 	string whoTurn = "O"; // first is O's turn
 
