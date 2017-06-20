@@ -10,7 +10,7 @@ private:
 	string whoTurn = "O"; // first is O's turn
 
 public:
-	Tic_Tac_Toe();
+	Tic_Tac_Toe(); // constructor
 	bool checkWinner();
 	bool isFull();
 
@@ -19,9 +19,12 @@ public:
 	void printBoard();
 
 	void aiGaLogic();
-	int gameLogic();
 
+	string switchuser(string);
+
+	int gameLogic();
 	int getInput();
+
 	
-	~Tic_Tac_Toe();
+	~Tic_Tac_Toe(); //destructor
 };

@@ -1,13 +1,18 @@
 #include <iostream>
 #include <stdlib.h>
 #include "Tic-Tac-Toe.h"
+#include "MiniMax.h"
 
 #define CLS system("cls");
 
 using namespace std;
 
-Tic_Tac_Toe::Tic_Tac_Toe() { // constructer
+Tic_Tac_Toe::Tic_Tac_Toe() { // constructor
 	clearBoard();
+}
+
+Tic_Tac_Toe::~Tic_Tac_Toe() {
+	cout << "END Game" << endl;
 }
 
 void Tic_Tac_Toe::clearBoard(void) { // reset game board
@@ -77,26 +82,53 @@ void Tic_Tac_Toe::addMove(int getNumber) { // board add user
 	else if (getNumber == 9 && board[2][2] == " ") board[2][2] = whoTurn;
 }
 
-void Tic_Tac_Toe::aiGaLogic(void) { //ai game logic
+string Tic_Tac_Toe::switchuser(string Turn) {
+	if (Turn == "X") return "O";
+	else if (Turn == "O") return "X";
+}
 
+void Tic_Tac_Toe::aiGaLogic(void) { //ai game logic
+	int score = -1;
+	int move[2] = { -1, -1 };
+	for (int i; i < 3; i++) {
+		for (int j; j < 3; j++) {
+			if (board[i][j] == " ") {
+				board[i][j] = whoTurn;
+				int TempScore = -minimax(board, switchuser(whoTurn));
+				board[i][j] = " ";
+				if (TempScore > score) {
+					score = TempScore;
+					move[0] = i;
+					move[1] = j;
+				}
+			}
+		}
+	}
+	board[move[0]][move[1]]= whoTurn;
 }
 
 int Tic_Tac_Toe::gameLogic(void) { // basic game logic
+	int i = 1;
 	while (!isFull()){
 		printBoard();
-		addMove(getInput());
+		aiGaLogic();
+		/*if (i%1 == 0){
+			addMove(getInput());
+		}
+		else{
+			aiGaLogic();
+		}
+		i++;*/
 		if (checkWinner()){
 			CLS;
 			cout << whoTurn << " is Winner" << endl;
 			return 0;
 		}
 		else{
-			if (whoTurn == "X") whoTurn = "O";
-			else if(whoTurn == "O") whoTurn = "X"; 
+			whoTurn = switchuser(whoTurn);
 		}
 		CLS;
 	}
 	CLS;
 	cout << "DRAW" << endl;
-
 }

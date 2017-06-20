@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MiniMax.cpp" />
     <ClCompile Include="Tic-Tac-Toe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MiniMax.h" />
     <ClInclude Include="Tic-Tac-Toe.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

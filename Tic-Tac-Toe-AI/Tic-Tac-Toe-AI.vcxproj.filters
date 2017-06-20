@@ -24,6 +24,9 @@
     <ClInclude Include="Tic-Tac-Toe.h">
       <Filter>리소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="MiniMax.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tic-Tac-Toe.cpp">
@@ -31,6 +34,9 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\Tic-Tac-Toe Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMax.cpp">
+      <Filter>소스 파일\MiniMax</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
